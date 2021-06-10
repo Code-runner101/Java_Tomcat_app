@@ -1,6 +1,7 @@
 package tomcat_example.component;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
@@ -8,9 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
+@Component
 public class ProductRepository {
     private List<Product> products = new ArrayList<>();
-
     private AtomicInteger count = new AtomicInteger(1);
 
     {

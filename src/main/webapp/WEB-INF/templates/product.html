@@ -8,12 +8,12 @@
 <body>
 <div class="container">
     <div class="outer header">
-        <div class="inner item">id</div>
+        <div class="inner">id</div>
         <div class="inner item">name</div>
         <div class="inner item">cost</div>
     </div>
-    <div class="outer" th:each="product: ${products}">
-        <div class="inner item" th:text="${product.id}">id</div>
+        <div class="outer" th:each="product: ${products}">
+        <div class="inner" th:text="${product.id}">id</div>
         <div class="inner item" th:text="${product.name}">name</div>
         <div class="inner item" th:text="${product.cost}">cost</div>
     </div>
