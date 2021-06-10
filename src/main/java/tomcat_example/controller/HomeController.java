@@ -27,11 +27,11 @@ public class HomeController {
         return "products";
     }
 
-//    @PostMapping("/add")
-//    public String testPostRequest(ProductRepository products, Product product) {
-//        products.add(product);
-//
-//        return "redirect:/product";
-//    }
+    @PostMapping("/add")
+    public String testPostRequest(ProductRepository products, Product product) {
+        products.add(product);
+
+        return "redirect:/product";
+    }
 
 }
