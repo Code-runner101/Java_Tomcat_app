@@ -19,11 +19,18 @@
     </div>
     <div class="form">
         <form action="#" th:action="@{/product/add}" th:object="${newProduct}" method="post">
+            <input type="text" value="ID" th:field="*{id}"/>
             <input type="text" value="Название" th:field="*{name}"/>
             <input type="text" value="Цена" th:field="*{cost}"/>
             <input type="submit" value="Добавить">
         </form>
     </div>
+<!--    <div class="form">-->
+<!--        <form action="#" th:action="@{/product/search}" th:object="${findId}" method="post">-->
+<!--            <input type="text" value="ID" th:field="*{id}"/>-->
+<!--            <input type="submit" value="Найти">-->
+<!--        </form>-->
+<!--    </div>-->
 </div>
 </body>
 </html>
